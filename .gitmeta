@@ -1,0 +1,8 @@
+chown -h 1000:1000 './.folderstamp'
+chmod 0777 './.folderstamp'
+/usr/bin/touch -hcmd "2023-01-13 21:45:10.2808533000 -0300" './.folderstamp'
+/usr/bin/touch -hcad "2023-01-13 21:45:10.3006943000 -0300" './.folderstamp'
+chown -h 1000:1000 './WeblinkApps'
+chmod 0777 './WeblinkApps'
+/usr/bin/touch -hcmd "2023-01-03 00:54:26.8495612000 -0300" './WeblinkApps'
+/usr/bin/touch -hcad "2023-01-03 00:54:26.8495612000 -0300" './WeblinkApps'
