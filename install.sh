@@ -36,21 +36,21 @@ Categories=Game;Simulation;Metaverse;Ethereum;
 Keywords=metaverse;world;mining;tokens;ethereum;wearables;multiplayer;roleplaying;sandbox;voxels;
 EOF
 
-echo "Installing Cryptovoxels weblink app..."
-cat > /usr/bin/cryptovoxels <<EOF
+echo "Installing Voxels (former Cryptovoxels) weblink app..."
+cat > /usr/bin/voxels <<EOF
 #!/bin/bash
 
 xdg-open https://www.cryptovoxels.com/play
 EOF
-$maysudo chmod +x /usr/bin/cryptovoxels
-cat > /usr/share/applications/cryptovoxels.desktop <<EOF
+$maysudo chmod +x /usr/bin/voxels
+cat > /usr/share/applications/voxels.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
-Name=Cryptovoxels
+Name=Voxels
 Comment=Play in a open 3D voxels metaverse with other etherean players, and spend tokens to buy NFT items/wearables
 Type=Application
-Exec=cryptovoxels
-Icon=cryptovoxels
+Exec=voxels
+Icon=voxels
 Categories=Game;Simulation;Metaverse;Ethereum;
 Keywords=metaverse;world;mining;tokens;ethereum;wearables;multiplayer;roleplaying;sandbox;voxels;
 EOF
@@ -95,5 +95,6 @@ EOF
 
 cd include/icons
 cp -r -f --preserve=all . /usr/share/icons/hicolor/scalable/apps/
+ln -s voxels.svg /usr/share/icons/hicolor/scalable/apps/cryptovoxels.svg
 cd "$SCRIPTPATH"
 $maysudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
