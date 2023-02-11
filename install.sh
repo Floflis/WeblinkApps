@@ -9,7 +9,7 @@ cat > /usr/share/applications/decentraland.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=Decentraland
-Comment=Play in a open 3D metaverse with other etherean players, and spend tokens to buy NFT items/wearables
+Comment=Play in an open 3D metaverse with other etherean players, and spend tokens to buy NFT items/wearables
 Type=Application
 Exec=decentraland
 Icon=decentraland
@@ -28,7 +28,7 @@ cat > /usr/share/applications/thesandbox.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=The Sandbox
-Comment=Play in a open 3D voxels metaverse with other etherean players, and spend tokens to buy NFT items/wearables
+Comment=Play in an open 3D voxels metaverse with other etherean players, and spend tokens to buy NFT items/wearables
 Type=Application
 Exec=thesandbox
 Icon=thesandbox
@@ -47,7 +47,7 @@ cat > /usr/share/applications/voxels.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=Voxels
-Comment=Play in a open 3D voxels metaverse with other etherean players, and spend tokens to buy NFT items/wearables
+Comment=Play in an open 3D voxels metaverse with other etherean players, and spend tokens to buy NFT items/wearables
 Type=Application
 Exec=voxels
 Icon=voxels
