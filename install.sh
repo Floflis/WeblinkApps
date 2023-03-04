@@ -98,3 +98,22 @@ cp -r -f --preserve=all . /usr/share/icons/hicolor/scalable/apps/
 ln -s voxels.svg /usr/share/icons/hicolor/scalable/apps/cryptovoxels.svg
 cd "$SCRIPTPATH"
 $maysudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
+
+echo "Installing PoolTogether weblink app..."
+cat > /usr/bin/pooltogether <<EOF
+#!/bin/bash
+
+xdg-open https://pooltogether.com/
+EOF
+$maysudo chmod +x /usr/bin/pooltogether
+cat > /usr/share/applications/pooltogether.desktop <<EOF
+[Desktop Entry]
+Encoding=UTF-8
+Name=PoolTogether
+Comment=Win by saving. PoolTogether is a crypto-powered savings protocol based on Premium Bonds. Save money and have a chance to win every day.
+Type=Application
+Exec=pooltogether
+Icon=pooltogether
+Categories=Finance;Ethereum;
+Keywords=tokens;ethereum;optimism;vaults;pools;save;savings;lottery;
+EOF
