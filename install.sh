@@ -93,12 +93,6 @@ Categories=Internet;
 Keywords=music;video;art;blockchain;metaverse;nft;ethereum;polygon;xdai;
 EOF
 
-cd include/icons
-cp -r -f --preserve=all . /usr/share/icons/hicolor/scalable/apps/
-ln -s voxels.svg /usr/share/icons/hicolor/scalable/apps/cryptovoxels.svg
-cd "$SCRIPTPATH"
-$maysudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
-
 echo "Installing PoolTogether weblink app..."
 cat > /usr/bin/pooltogether <<EOF
 #!/bin/bash
@@ -117,3 +111,9 @@ Icon=pooltogether
 Categories=Finance;Ethereum;
 Keywords=tokens;ethereum;optimism;vaults;pools;save;savings;lottery;
 EOF
+
+cd include/icons
+cp -r -f --preserve=all . /usr/share/icons/hicolor/scalable/apps/
+ln -sf voxels.svg /usr/share/icons/hicolor/scalable/apps/cryptovoxels.svg
+cd "$SCRIPTPATH"
+$maysudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
