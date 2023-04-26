@@ -114,6 +114,7 @@ EOF
 
 cd include/icons
 cp -r -f --preserve=all . /usr/share/icons/hicolor/scalable/apps/
+mv /usr/share/icons/hicolor/scalable/apps/scalable-max-16 /usr/share/icons/hicolor/
 ln -sf voxels.svg /usr/share/icons/hicolor/scalable/apps/cryptovoxels.svg
 cd "$SCRIPTPATH"
 $maysudo gtk-update-icon-cache /usr/share/icons/gnome/ -f
